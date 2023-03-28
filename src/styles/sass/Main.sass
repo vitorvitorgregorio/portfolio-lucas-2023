@@ -8,13 +8,21 @@
     flex-wrap: wrap
     align-items: center
     column-gap: 0.3rem
-
-.main__title-hover
-    text-decoration: underline
-    padding: 1rem 0.5rem
     &:hover
         .cursor
             animation: cursor 0.5s forwards
+    .main__title-normal
+        &:hover
+            pointer-events: none !important
+
+.main__title-hover
+    padding: 1rem 0.5rem
+    text-decoration: underline
+    text-decoration-thickness: 2px
+.main__title-normal
+    pointer-events: none !important
+        
+
         
     
 
@@ -31,7 +39,7 @@
     height: 100vh
     pointer-events: none
 .delay
-    animation: delay 1s ease-in-out forwards
+    animation: delay 0.5s ease-in-out forwards
 .cursor
     width: 20px
     height: 20px

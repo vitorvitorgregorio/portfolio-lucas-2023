@@ -1,3 +1,4 @@
+@import Variables
 .projects
     margin-top: 136px
     .container
@@ -11,7 +12,7 @@
     border-radius: 8px
     padding: 1rem
     background: transparent
-    transition: all 0.5s ease-in-out
+    transition: all 0.1s 
     border: 1px solid transparent
     cursor: pointer
     &:hover
@@ -69,3 +70,12 @@
     border-radius: 400px
     background: #00000033
     position: absolute
+
+
+
+
+@media screen and (max-width: $tablet)
+    .projects__row
+        flex-direction: column
+    .projects__card
+        height: 500px

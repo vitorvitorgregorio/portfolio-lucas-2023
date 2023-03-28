@@ -1,19 +1,22 @@
 import { ReactComponent as Logo } from "../svg/logo.svg";
 import { ReactComponent as Lixo } from "../svg/lixo.svg";
 import "../styles/sass/Header.sass";
+import { Link } from "react-router-dom";
+import Home from "../routes/Home";
+
 
 function Header() {
   return (
     <header className="header">
       
-      <a href="#" className="logo-contain">
+      <Link to="/" className="logo-contain">
         <Logo className="logo" />
-      </a>
+      </Link>
 
-      <a href="#" className="arquivo-contain">
+      <Link to="/arquivo" className="arquivo-contain">
         <Lixo className="lixo" />
         <span className="arquivo"> Arquivo </span>
-      </a>
+      </Link>
     </header>
   );
 }

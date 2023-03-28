@@ -6,13 +6,14 @@ import Main from "./components/Main";
 import Arrow from "./components/Arrow";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
-      <Arrow />
-      <Projects />
+      <Outlet />
       <Footer />
     </div>
   );

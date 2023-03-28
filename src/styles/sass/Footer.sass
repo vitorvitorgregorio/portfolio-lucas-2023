@@ -1,17 +1,36 @@
 .footer
+    margin-top: 124px
+    background: #131416
+    padding: 1.5rem 3rem
+    
     .container
         display: flex
         flex-direction: column
-
+        gap: 2.5rem
+    .footer__line
+        width: 100%
+        border-bottom: 1px solid #FFFFFF33
+.footer__links
+    display: flex
+    justify-content: space-between
+    align-items: center
 .footer__list 
     list-style-type: none
     padding: 0
     display: flex
-    padding: 2rem 0
-    border-bottom: 1px solid #FFFFFF33
+    gap: 1.5rem
+    
 .footer__link
     display: flex
     align-items: center
     padding: 0.5rem
     gap: 0.8rem
     text-decoration: none
+    transition: 0.1s ease
+    border-radius: 4px
+    &:hover
+        background: #FFFFFF1A
+    &:active
+       background: #FFFFFF0A
+    &:visited
+       background: #FFFFFF0A !important

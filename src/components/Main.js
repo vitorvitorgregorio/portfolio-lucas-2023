@@ -13,16 +13,16 @@ function Main() {
     setCursorY(e.pageY);
   });
 
-
-  
-
-    
-
   return (
     <main className="main container">
-      
       <h1 className="main__title">
-        
+      <div
+            className="cursor"
+            style={{
+              left: cursorX + "px",
+              top: cursorY + "px",
+            }}
+          ></div>
         <span className="main__title-normal">
           Product Design Lead baseado em São Paulo, construindo{" "}
         </span>
@@ -37,24 +37,32 @@ function Main() {
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
-          <div
-          className="cursor"
-          style={{
-            left: cursorX + "px",
-            top: cursorY + "px",
-          }}
-        ></div>
+          
           marcas
           {isShown && (
             <div className="box-hover marcas-hover">
-              <img src={queijoHover} alt="" className="delay"/>
-              <img src={voltageHover} alt="" className="delay"/>
-              <img src={omegaHover} alt="" className="delay"/>
+              <img src={queijoHover} alt="" className="delay" />
+              <img src={voltageHover} alt="" className="delay" />
+              <img src={omegaHover} alt="" className="delay" />
             </div>
           )}
         </span>
         <span className="main__title-normal">para</span>
-        <span className="main__title-hover companhias">companhias</span>
+        <span
+          className="main__title-hover companhias"
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}
+        >
+          
+          companhias
+          {isShown && (
+            <div className="box-hover marcas-hover">
+              <img src={queijoHover} alt="" className="delay" />
+              <img src={voltageHover} alt="" className="delay" />
+              <img src={omegaHover} alt="" className="delay" />
+            </div>
+          )}
+        </span>
         <span className="main__title-normal">
           que impactam positivamente a vida das{" "}
         </span>

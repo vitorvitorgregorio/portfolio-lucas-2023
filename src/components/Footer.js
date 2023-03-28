@@ -11,6 +11,7 @@ function Footer() {
           <LogoFooter className="logo__footer" />
           <p>Copyright - 2023 - Lucas Gregorio</p>
         </div>
+        <hr className="footer__line"/>
         <nav className="footer__links">
           <ul className="footer__list">
             <li>
@@ -32,8 +33,6 @@ function Footer() {
               </a>
             </li>
           </ul>
-
-          
           <a className="footer__link" href="https://vitor-gregorio.netlify.app/" target="_blank">
             <Link className="link-icon" />
             Desenvolvido por Vitor Gregorio
