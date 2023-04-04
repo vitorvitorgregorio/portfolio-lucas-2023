@@ -1,12 +1,12 @@
+@import Variables
 .footer
     margin-top: 124px
     background: #131416
     padding: 1.5rem 3rem
+    display: flex
+    flex-direction: column
+    gap: 2.5rem
     
-    .container
-        display: flex
-        flex-direction: column
-        gap: 2.5rem
     .footer__line
         width: 100%
         border-bottom: 1px solid #FFFFFF33
@@ -14,12 +14,12 @@
     display: flex
     justify-content: space-between
     align-items: center
-.footer__list 
+.footer__list
     list-style-type: none
     padding: 0
     display: flex
     gap: 1.5rem
-    
+
 .footer__link
     display: flex
     align-items: center
@@ -31,6 +31,19 @@
     &:hover
         background: #FFFFFF1A
     &:active
-       background: #FFFFFF0A
+        background: #FFFFFF0A
     &:visited
-       background: #FFFFFF0A !important
+        background: #FFFFFF0A !important
+
+@media screen and (max-width: $tablet)
+    .footer
+        flex-direction: column
+        padding: 1.5rem 1.5rem
+    .footer__links
+        flex-direction: column
+        align-items: flex-start
+        gap: 1.5rem
+
+@media screen and (max-width: $phone)
+    .footer__list
+        gap: 0.1rem

@@ -1,13 +1,9 @@
 import React from 'react'
-
+import MainArquivo from "../components/MainArquivo";
 
 function Arquivo () {
     return (
-        <div>
-            
-            <h1>olá Arquivo</h1>
-            
-        </div>
+        <MainArquivo />
     )
 }
 

@@ -6,7 +6,7 @@ function Footer() {
   return (
     
     <footer className="footer">
-      <div className="container">
+      
         <div className="footer__copyright">
           <LogoFooter className="logo__footer" />
           <p>Copyright - 2023 - Lucas Gregorio</p>
@@ -38,7 +38,7 @@ function Footer() {
             Desenvolvido por Vitor Gregorio
           </a>
         </nav>
-      </div>
+      
     </footer>
   );
 }

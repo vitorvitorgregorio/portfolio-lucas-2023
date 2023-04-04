@@ -1,16 +1,16 @@
-@font-face 
+@import Variables
+@font-face
     font-family: Aeonik
     src: url(../../fonts/Aeonik-light.otf)
     font-weight: 300
-@font-face 
+@font-face
     font-family: Aeonik
     src: url(../../fonts/Aeonik-regular.otf)
     font-weight: 400
-@font-face 
+@font-face
     font-family: Aeonik
     src: url(../../fonts/Aeonik-Medium.otf)
     font-weight: 500
-
 
 *,body
     font-family: Aeonik !important
@@ -20,8 +20,7 @@
         font-size: 1rem
         font-weight: 400
         line-height: 18.4px
-        color: #fff 
-
+        color: #fff
 
 .main
     .main__title
@@ -30,15 +29,10 @@
         line-height: 96px
         color: #fff
 
-
 .projects
-    .projects__title
-        font-size: 1.5rem
-        line-height: 27.6px
-        font-weight: 300
     .projects__tag
         font-size: 14px
-        line-height:16.1px
+        line-height: 16.1px
         font-weight: 500
         color: #000
     .projects__card-subTitle
@@ -50,8 +44,7 @@
         font-size: 1.5rem
         line-height: 27.6px
         color: #fff
-        font-weight: 400         
-
+        font-weight: 400
 
 .footer
     .footer__link
@@ -65,3 +58,32 @@
             font-weight: 400
             line-height: 13.8px
             color: #fff
+.main-arquivo__title
+    font-size: 124px
+    line-height: 200%
+    font-weight:300
+@media screen and (max-width: $tablet)
+    .main
+        .main__title-mobile
+            font-size: 36px
+            line-height: 76.8px
+            font-weight: 300
+    .projects
+        .projects__tag
+            font-size: 14px
+            line-height: 16.1px
+            font-weight: 500
+            color: #000
+        .projects__card-subTitle
+            font-size: 1rem
+            line-height: 18.4px
+            color: #fff
+            font-weight: 300
+        .projects__title
+            font-size: 1rem
+            line-height: 27.6px
+            color: #fff
+            font-weight: 400
+@media screen and (max-width: $tablet)
+    .main__title-mobile
+        font-size: 28px

@@ -1,9 +1,8 @@
+@import Variables
 .main
-    margin-top: 124px
+    margin-top: 224px
 .main__title
-    font-size: 48px
     margin: 0
-    line-height: 96px
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -11,16 +10,12 @@
     &:hover
         .cursor
             animation: cursor 0.5s forwards
-    .main__title-normal
-        &:hover
-            pointer-events: none !important
-
+.main__title-mobile
+    display: none
 .main__title-hover
     padding: 1rem 0.5rem
     text-decoration: underline
     text-decoration-thickness: 2px
-.main__title-normal
-    pointer-events: none !important
         
 
         
@@ -71,4 +66,13 @@
    
     
     
-    
+@media screen and (max-width: $tablet)
+    .main
+        margin-top: 98px
+    .main__title
+        display: none
+    .main__title-mobile
+        display: block
+@media screen and (max-width: $phone)
+    .main
+        margin-top: 66px

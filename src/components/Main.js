@@ -16,13 +16,13 @@ function Main() {
   return (
     <main className="main container">
       <h1 className="main__title">
-      <div
-            className="cursor"
-            style={{
-              left: cursorX + "px",
-              top: cursorY + "px",
-            }}
-          ></div>
+        <div
+          className="cursor"
+          style={{
+            left: cursorX + "px",
+            top: cursorY + "px",
+          }}
+        ></div>
         <span className="main__title-normal">
           Product Design Lead baseado em São Paulo, construindo{" "}
         </span>
@@ -37,7 +37,6 @@ function Main() {
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
-          
           marcas
           {isShown && (
             <div className="box-hover marcas-hover">
@@ -53,7 +52,6 @@ function Main() {
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
-          
           companhias
           {isShown && (
             <div className="box-hover marcas-hover">
@@ -64,9 +62,13 @@ function Main() {
           )}
         </span>
         <span className="main__title-normal">
-          que impactam positivamente a vida das{" "}
+          que impactam positivamente a vida das pessoas.
         </span>
-        <span className="main__title-hover pessoas">pessoas.</span>
+      </h1>
+      <h1 className="main__title-mobile">
+        Product Design Lead baseado em São Paulo, construindo experiências
+        digitais, estratégia e marcas para companhias que impactam positivamente
+        a vida das pessoas.
       </h1>
     </main>
   );
