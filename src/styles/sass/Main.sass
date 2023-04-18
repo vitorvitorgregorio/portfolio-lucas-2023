@@ -16,7 +16,19 @@
     padding: 1rem 0.5rem
     text-decoration: underline
     text-decoration-thickness: 2px
-        
+.main__title-hover.marcas
+    &:hover
+        .box-hover.marcas
+            display: flex 
+.main__title-hover.experiencias-digitais
+    &:hover
+        .box-hover.experiencias-digitais
+            display: flex 
+.main__title-hover.companhias
+    &:hover
+        .box-hover.companhias
+            display: flex 
+                   
 
         
     
@@ -24,6 +36,8 @@
 .box-hover
     position: absolute
     align-items: flex-start
+    flex-wrap: wrap
+    gap: 1rem
     display: flex
     top: 0
     left: 0
@@ -33,6 +47,8 @@
     width: 100%
     height: 100vh
     pointer-events: none
+    opacity: 0
+    padding: 2rem
 .delay
     animation: delay 0.5s ease-in-out forwards
 .cursor
@@ -43,7 +59,15 @@
     position: fixed
     pointer-events: none
     mix-blend-mode: difference
-
+.image-box
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    gap: 0
+    p
+        font-size: 1rem
+        transform: rotate(90deg)
+        line-height:24px
 
 @keyframes cursor
     0%
