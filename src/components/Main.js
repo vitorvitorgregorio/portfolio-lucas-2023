@@ -43,7 +43,7 @@ function Main() {
           <div className="box-hover experiencias-digitais">
             <div className="image-box">
               <img src={brasilDentalEx} alt="" />
-              <p>brasil Dental</p>
+              <p>Brasil Dental</p>
             </div>
             <div className="image-box">
               <img src={fineEx} alt="" />
