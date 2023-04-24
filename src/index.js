@@ -7,6 +7,8 @@ import "../src/styles/sass/Variables.sass";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home";
 import Arquivo from "./routes/Arquivo";
+import FineApp from "./routes/projects/FineApp";
+import StartEmpreendedor from "./routes/projects/StartEmpreendedor";
 /*const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "arquivo",
         element: <Arquivo />,
+      },
+      {
+        path: "fineapp",
+        element: <FineApp />,
+      },
+      {
+        path: "startempreendedor",
+        element: <StartEmpreendedor />,
       },
     ],
   },
