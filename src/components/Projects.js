@@ -1,6 +1,7 @@
 import "../styles/sass/Projects.sass";
 import { ReactComponent as NewCaseStar } from "../svg/new-case-star.svg";
 import { ReactComponent as DateCase } from "../svg/date-case.svg";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -10,7 +11,7 @@ function Projects() {
         <div className="projects__title">Produtos & Projetos</div>
 
         <div className="projects__row">
-          <div className="projects__card">
+          <Link to="/btg" className="projects__card">
             <div className="btg projects__card-background">
               
               <span className="projects__tag new-case-star">
@@ -25,8 +26,8 @@ function Projects() {
                 da America Latina
               </h3>
             </div>
-          </div>
-          <div className="projects__card">
+          </Link>
+          <Link to="/fineapp" className="projects__card">
             <div className="fine-app projects__card-background">
               
               <span className="projects__tag date-case">
@@ -40,11 +41,11 @@ function Projects() {
                 Empoderando as pessoas por meio da troca de conhecimento
               </h3>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="projects__row">
-          <div className="projects__card">
+          <Link to="/startempreendedor" className="projects__card">
             <div className="start-empreendedor projects__card-background">
               
               <span className="projects__tag new-case-star">
@@ -59,8 +60,8 @@ function Projects() {
                 negócio
               </h3>
             </div>
-          </div>
-          <div className="projects__card">
+          </Link>
+          <Link to="brasildental" className="projects__card">
             <div className="brasil-dental projects__card-background">
               
               <span className="projects__tag date-case">
@@ -75,11 +76,11 @@ function Projects() {
                 brasileiro
               </h3>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="projects__row">
-          <div className="projects__card">
+          <Link to="/queijoeprosa" className="projects__card">
             <div className="queijo-e-prosa projects__card-background">
               
               <span className="projects__tag date-case">
@@ -94,7 +95,7 @@ function Projects() {
                 queijo é muita felicidade
               </h3>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

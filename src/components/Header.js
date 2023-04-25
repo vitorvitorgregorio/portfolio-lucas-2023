@@ -2,7 +2,6 @@ import { ReactComponent as Logo } from "../svg/logo.svg";
 import { ReactComponent as Lixo } from "../svg/lixo.svg";
 import "../styles/sass/Header.sass";
 import { Link } from "react-router-dom";
-import Home from "../routes/Home";
 
 
 function Header() {

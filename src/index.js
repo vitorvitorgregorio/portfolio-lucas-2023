@@ -7,8 +7,12 @@ import "../src/styles/sass/Variables.sass";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home";
 import Arquivo from "./routes/Arquivo";
+import Btg from "./routes/projects/Btg";
 import FineApp from "./routes/projects/FineApp";
 import StartEmpreendedor from "./routes/projects/StartEmpreendedor";
+import BrasilDental from "./routes/projects/BrasilDental";
+import QueijoEProsa from "./routes/projects/QueijoEProsa";
+
 /*const router = createBrowserRouter([
   {
     path: "/",
@@ -34,12 +38,24 @@ const router = createBrowserRouter([
         element: <Arquivo />,
       },
       {
+        path: "btg",
+        element: <Btg />,
+      },
+      {
         path: "fineapp",
         element: <FineApp />,
       },
       {
         path: "startempreendedor",
         element: <StartEmpreendedor />,
+      },
+      {
+        path: "brasildental",
+        element: <BrasilDental />,
+      },
+      {
+        path: "queijoeprosa",
+        element: <QueijoEProsa />,
       },
     ],
   },
