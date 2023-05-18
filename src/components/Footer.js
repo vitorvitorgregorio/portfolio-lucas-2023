@@ -11,7 +11,7 @@ function Footer() {
           <LogoFooter className="logo__footer" />
           <p>Copyright - 2023 - Lucas Gregorio</p>
         </div>
-        <hr className="footer__line"/>
+        <div className="footer__line"> </div>
         <nav className="footer__links">
           <ul className="footer__list">
             <li>

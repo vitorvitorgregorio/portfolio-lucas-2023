@@ -41,17 +41,17 @@ function Main() {
         <span className="main__title-hover experiencias-digitais">
           experiências digitais,
           <div className="box-hover experiencias-digitais">
-            <div className="image-box">
-              <img src={brasilDentalEx} alt="" />
-              <p>Brasil Dental</p>
+          <div className="image-box omega">
+              <img src={OmegaEnergiaEx} alt="" />
+              <p>Omega Energia</p>
             </div>
-            <div className="image-box">
+            <div className="image-box fine">
               <img src={fineEx} alt="" />
               <p>FineApp</p>
             </div>
-            <div className="image-box">
-              <img src={OmegaEnergiaEx} alt="" />
-              <p>Omega Energia</p>
+            <div className="image-box dental">
+              <img src={brasilDentalEx} alt="" />
+              <p>Brasil Dental</p>
             </div>
           </div>
         </span>
@@ -60,10 +60,7 @@ function Main() {
         <span className="main__title-hover marcas">
           marcas
           <div className="box-hover marcas">
-            <div className="image-box">
-              <img src={omegaMarcas} alt="" />
-              <p>Omega energia</p>
-            </div>
+            
             <div className="image-box">
               <img src={queijoMarcas} alt="" />
               <p>Queijo & Prosa</p>
@@ -71,6 +68,11 @@ function Main() {
             <div className="image-box">
               <img src={voltageMarcas} alt="" />
               <p>Voltage</p>
+              
+            </div>
+            <div className="image-box">
+            <img src={omegaMarcas} alt="" />
+              <p>Omega energia</p>
             </div>
           </div>
         </span>
